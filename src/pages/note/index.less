@@ -1,0 +1,49 @@
+.note-container{
+  display: flex;
+  height: 100%;
+  .note-slider{
+    width: 250px;
+    border-right: #efefef solid thin;
+    ul{
+      padding: 4px 0;
+      margin: 0;
+      list-style: none;
+      li {
+        height: 32px;
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+        position: relative;
+        cursor: pointer;
+        &:before{
+          content: ' ';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 2px;
+          height: 32px;
+          background: transparent;
+          transform-origin: left center;
+        }
+        &:hover{
+          background: #efefef;
+        }
+        &:hover:before{
+          background: #1890ff;
+        }
+      }
+    }
+  }
+  .note-content{
+    flex: 1;
+  }
+}
+
+.site-dropdown-context-menu {
+  color: #777;
+  background: #f7f7f7;
+}
+.editor-container{
+  height: 100%;
+  background: #f7f7f7;
+}
